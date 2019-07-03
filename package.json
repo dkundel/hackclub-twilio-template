@@ -4,7 +4,9 @@
   "description": "A template for a Twilio workshop at Hack Club",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Phil Nash <philnash@twilio.com>",
   "license": "MIT",
@@ -12,6 +14,8 @@
     "body-parser": "^1.16.0",
     "express": "^4.14.0",
     "node-fetch": "^1.6.3",
-    "twilio": "^3.5.0"
-  }
+    "twilio": "^3.5.0",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
